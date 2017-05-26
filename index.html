@@ -1,0 +1,600 @@
+<!DOCTYPE html >
+
+<head> 
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <title>Ebert Lee</title>
+    <meta name=keywords content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/persons/me-favicon.png" width=16 height=16>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel=stylesheet type='text/css'>
+    <link rel=stylesheet href="css/font-awesome.min.css">
+    <link rel=stylesheet href="css/jquery.fancybox.css">
+    <link rel=stylesheet href="css/bootstrap.min.css">
+    <link rel=stylesheet href="css/owl.carousel.css">
+    <link rel=stylesheet href="css/slit-slider.css">
+    <link rel=stylesheet href="css/animate.css">
+    <link rel=stylesheet href="css/textEffectWithCursor.css">
+    <link rel=stylesheet href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/particle.css">
+    <link rel="stylesheet" type="text/css" href="css/fontGlow.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <base href="/">
+    
+</head>
+
+<body id=body ng-app="DAVID" ng-controller="davidController">
+    
+    <div id=preloader>
+        <div class=loder-box>
+            <div class=battery></div>
+        </div>
+    </div>
+    <header id=navigation class="navbar-inverse navbar-fixed-top animated-header">
+        <div class=container>
+            <div class=navbar-header>
+                <button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
+                    <span class=sr-only>Toggle navigation</span>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+                    <span class=icon-bar></span>
+                </button>
+                <h1 class=navbar-brand>
+<a href="">
+<span> Ebert</span>
+</a>
+</h1>
+            </div>
+            <nav class="collapse navbar-collapse navbar-right" role=navigation>
+                <ul id=nav class="nav navbar-nav">
+                    <li><a href="#body">Home</a></li>
+                    <li><a href="#service">Skills & Certificates</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#testimonials">Testimonial</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div > 
+
+    </div> 
+    <main class=site-content role=main>
+        <!-- <section id=home-slider>
+            <div id=slider class=sl-slider-wrapper>
+                <div id=myLogo>
+                    <div class=logoParent>
+                        <img src="img/persons/me.png">
+                    </div>
+                </div>
+                 
+                <div class=sl-slider >
+                    <div class=sl-slide data-orientation=horizontal data-slice1-rotation=-25 data-slice2-rotation=-25 data-slice1-scale=2 data-slice2-scale=2 >
+                        <div class="lazy bg-img bg-img-1"></div>
+                        <div class=slide-caption>
+                            <div class=caption-content>
+                                <h2 class="animated fadeInDown">EBERT LEE</h2>
+                                <span class="animated fadeInDown">Full Stack Web Developer</span>
+                                <a href="#contact" class="btn btn-blue btn-effect">Hire Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=sl-slide data-orientation=vertical data-slice1-rotation=10 data-slice2-rotation=-15 data-slice1-scale=1.5 data-slice2-scale=1.5>
+                        <div class="lazy bg-img bg-img-2"></div>
+                        <div class=slide-caption>
+                            <div class=caption-content>
+                                <h2>" Mastering new technology is my passion! "</h2>
+                                <span>My code is as valid, clean, cross-browser, hackless and pixel-perfect.</span>
+                                <a href="#contact" class="btn btn-blue btn-effect">Hire Me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=sl-slide data-orientation=horizontal data-slice1-rotation=3 data-slice2-rotation=3 data-slice1-scale=2 data-slice2-scale=1>
+                        <div class="lazy bg-img bg-img-3"></div>
+                        <div class=slide-caption>
+                            <div class=caption-content>
+                                <h2>" I enjoy what I do, I do what I enjoy "</h2>
+                                <span> </span>
+                                <a href="#contact" class="btn btn-blue btn-effect">Hire Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav id=nav-arrows class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+                    <a href="javascript:;" class=sl-prev>
+                        <i class="fa fa-angle-left fa-3x"></i>
+                    </a>
+                    <a href="javascript:;" class=sl-next>
+                        <i class="fa fa-angle-right fa-3x"></i>
+                    </a>
+                </nav>
+                <nav id=nav-dots class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
+                    <span class=nav-dot-current></span>
+                    <span></span>
+                    <span></span>
+                </nav>
+            </div>
+        </section> -->
+        <section id="section-top" >
+            <div id=particle-slider style="height: 400px">
+            <div class="slides">
+                <div id="first-slide" class="slide" data-src="data:image/png;base64,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">
+                </div>
+            </div>
+            <canvas class="draw"></canvas>
+            </div>
+        </section>
+        <section id=about>
+            <div class=container>
+                <div class=row>
+                    <div class="col-md-2 col-sm-3 wow animated fadeInLeft">
+                         <div id=myLogo>
+                            <img src="img/persons/me.png">
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-md-offset-1 col-sm-9 wow animated fadeInRight">
+                        <div class=welcome-block>
+                            <div class=message-body>
+                                <h2 id="welcome" style="color: white; margin-top: 0px;">&nbsp;</h2>
+                                <p >
+                                    I have over 7 years of experience building, fixing and maintaining web applications and their back-ends (large and small).
+                                    <br> Web programming is my bread and butter- JS/Python and whatever drives it on a LAMP or LAMJ stack (PHP, Java/JSP, JavaScript, Perl, etc.).
+                                    <br> Plus I can administer the technology needed behind the scenes for database setup (MySQL and postgreSQL), maintenance, cron jobs, and systems administration (RedHat/Fedora/Centos or other Linux, etc.)
+                                    <br> Whether you have just a quick need for someone who knows their stuff, or a larger or ongoing project that might require recurring tasks, I'm here to help.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id=service style='background: url(img/sections/brick-wall.png) repeat center'>
+            <div class=container>
+                <div class=row>
+                    <div class="sec-title text-center">
+                        <h2 class="wow animated bounceInLeft afterSpeciaH2 ">Skills & Certificates</h2>
+                        <p class="wow animated bounceInRight glowText" style="color: black">Awesome skills!</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+                        <div class=service-item>
+                            <div class=row>
+                                <div class="hidden-xs col-sm-2 icon-skill"><img class=img-skill src="img/icons/html5.png" width=32 height=32 class=col-sm-10></div>
+                                <div class=col-sm-10>
+                                    <div class=row>
+                                        <div class="col-sm-12 title-skill">HTML5</div>
+                                        <div class="col-sm-12 bar-skill">
+                                            <div class=progress>
+                                                <div class="progress-bar progress-bar-striped active high-top" role=progressbar aria-valuemax=100 style="width:100%">
+                                                    5
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=row>
+                                <div class="hidden-xs col-sm-2 icon-skill"><img class=img-skill src="img/icons/css3.png" width=32 height=45></div>
+                                <div class=col-sm-10>
+                                    <div class=row>
+                                        <div class="col-sm-12 title-skill">CSS</div>
+                                        <div class="col-sm-12 bar-skill">
+                                            <div class=progress>
+                                                <div class="progress-bar progress-bar-striped active high-top " role=progressbar aria-valuenow=90 aria-valuemin=0 aria-valuemax=100 style="width:100%">
+                                                    5
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=row>
+                                <div class="hidden-xs col-sm-2 icon-skill"><img class=img-skill src="img/icons/js.png" width=32 height=45></div>
+                                <div class=col-sm-10>
+                                    <div class=row>
+                                        <div class="col-sm-12 title-skill">JAVA SCRIPT</div>
+                                        <div class="col-sm-12 bar-skill">
+                                            <div class=progress>
+                                                <div class="progress-bar progress-bar-striped active high-top" role=progressbar aria-valuenow=90 aria-valuemin=0 aria-valuemax=100 style="width:98%">
+                                                    4.95
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=row>
+                                <div class="hidden-xs col-sm-2 icon-skill"><img class=img-skill alt src="img/icons/bootstrap.png" width=32 height=32></div>
+                                <div class=col-sm-10>
+                                    <div class=row>
+                                        <div class="col-sm-12 title-skill">BOOTSTRAP</div>
+                                        <div class="col-sm-12 bar-skill">
+                                            <div class=progress>
+                                                <div class="progress-bar progress-bar-striped active high-top" role=progressbar aria-valuemax=100 style="width:100%">
+                                                    5
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay=0.3s>
+                        <div class=service-item>
+                            <div class=row>
+                                <div class="hidden-xs col-sm-2 icon-skill"><img class=img-skill src="img/icons/angular.png" width=32 height=34></div>
+                                <div class=col-sm-10>
+                                    <div class=row>
+                                        <div class="col-sm-12 title-skill">ANGULAR.JS</div>
+                                        <div class="col-sm-12 bar-skill">
+                                            <div class=progress>
+                                                <div class="progress-bar progress-bar-striped active high-top" role=progressbar aria-valuenow=90 aria-valuemin=0 aria-valuemax=100 style="width:93%">
+                                                    4.7
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=row>
+                                <div class="hidden-xs col-sm-2 icon-skill"><img class=img-skill src="img/icons/nodejs.png" width=32 height=36></div>
+                                <div class=col-sm-10>
+                                    <div class=row>
+                                        <div class="col-sm-12 title-skill">NODE.JS</div>
+                                        <div class="col-sm-12 bar-skill">
+                                            <div class=progress>
+                                                <div class="progress-bar progress-bar-striped active high-middle" role=progressbar aria-valuenow=90 aria-valuemin=0 aria-valuemax=100 style="width:95%">
+                                                    4.8
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=row>
+                                <div class="hidden-xs col-sm-2 icon-skill"><img class=img-skill src="img/icons/php.png" width=32 height=32></div>
+                                <div class=col-sm-10>
+                                    <div class=row>
+                                        <div class="col-sm-12 title-skill">PHP</div>
+                                        <div class="col-sm-12 bar-skill">
+                                            <div class=progress>
+                                                <div class="progress-bar progress-bar-striped active  high-middle" role=progressbar aria-valuenow=90 aria-valuemin=0 aria-valuemax=100 style="width:96%">
+                                                    4.85
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=row>
+                                <div class="hidden-xs col-sm-2 icon-skill"><img class=img-skill src="img/icons/sql.png" width=32 height=32></div>
+                                <div class=col-sm-10>
+                                    <div class=row>
+                                        <div class="col-sm-12 title-skill">SQL</div>
+                                        <div class="col-sm-12 bar-skill">
+                                            <div class=progress>
+                                                <div class="progress-bar progress-bar-striped active high-middle" role=progressbar aria-valuenow=90 aria-valuemin=0 aria-valuemax=100 style="width:92%">
+                                                    4.6
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="text-align: center" id="certificatesDiv"><br>
+                        <p class="wow animated bounceInRight glowText" style="color: black;margin-bottom: 35px;margin-top: 20px;" >Certificates!</p>
+                        <div style="width: 50%;float: left;text-align: right;">
+                            <a href="https://www.testdome.com/cert/5gjsfr2dnh" class="testdome-certificate-stamp gold" style="margin-right: 30px;float: right;"><span class="testdome-certificate-name">Ebert Lee</span><span class="testdome-certificate-test-name">JavaScript (Hard) </span><span class="testdome-certificate-card-logo">TestDome<br />Certificate</span></a><script type="text/javascript">var stylesheet = "https://www.testdome.com/content/source/stylesheets/embed.css", link = document.createElement("link"); link.href = stylesheet, link.type = "text/css", link.rel = "stylesheet", link.media = "screen,print", document.getElementsByTagName("head")[0].appendChild(link);</script>
+                        </div>
+                        <div style="float: right; text-align: left;width: 50%;">
+                            <a href="https://www.testdome.com/cert/ej1m3b7w9x" class="testdome-certificate-stamp gold" style="margin-left: 30px;"><span class="testdome-certificate-name">Ebert Lee</span><span class="testdome-certificate-test-name">HTML/CSS (Hard) </span><span class="testdome-certificate-card-logo">TestDome<br />Certificate</span></a><script type="text/javascript">var stylesheet = "https://www.testdome.com/content/source/stylesheets/embed.css", link = document.createElement("link"); link.href = stylesheet, link.type = "text/css", link.rel = "stylesheet", link.media = "screen,print", document.getElementsByTagName("head")[0].appendChild(link);</script>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!--  <section id=social class="" >
+            <div class="container cont-mg">
+                <div class=row>
+                    <div class=col-md-4>
+                        <div class=cont-ab>
+                            <h4 class="title-four color-a">Other Skills</h4>
+                            <div class=row>
+                                <div class=col-xs-2><img class=img-soft src="img/icons/photo.png" width=32 height=32></div>
+                                <div class="col-xs-5 ability">Photoshop</div>
+                                <div class="col-xs-5 expert">78</div>
+                            </div>
+                            <div class=row>
+                                <div class=col-xs-2><img class=img-soft src="img/icons/matlab.png" width=32 height=32></div>
+                                <div class="col-xs-5 ability">Matlab</div>
+                                <div class="col-xs-5 advanced">67</div>
+                            </div>
+                            <div class=row>
+                                <div class=col-xs-2><img class=img-soft src="img/icons/vc.png" width=32 height=32></div>
+                                <div class="col-xs-5 ability">VC++</div>
+                                <div class="col-xs-5 expert">75</div>
+                            </div>
+                            <div class=row>
+                                <div class=col-xs-2><img class=img-soft src="img/icons/3dmax.png" width=32 height=32></div>
+                                <div class="col-xs-5 ability">3ds Max</div>
+                                <div class="col-xs-5 advanced medium">36</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=col-md-4>
+                        <div class=cont-ab>
+                            <h4 class="title-four color-b">Awesome Services</h4>
+                            <div class=row>
+                                <div class="col-md-12 text-awsm">Frontend Development</div>
+                                <div class="col-md-12 text-awsm">Backend Development</div>
+                                <div class="col-md-12 text-awsm">Ecommerce Development</div>
+                                <div class="col-md-12 text-awsm">Payment Integration</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=col-md-4>
+                        <div class=cont-ab>
+                            <h4 class="title-four color-c">Other Interests</h4>
+                            <div class=row>
+                                <div class=col-sm-6>
+                                    <div class=row>
+                                        <div class="col-md-12 intrst">
+                                            <img alt=Running src="img/icons/Running-icon.png" width=64 height=44>
+                                        </div>
+                                    </div>
+                                    <p class=text-interest>Running</p>
+                                </div>
+                                <div class=col-sm-6>
+                                    <div class=row>
+                                        <div class="col-md-12 intrst">
+                                            <img alt=Taekwondo src="img/icons/Taekwondo-icon.png" width=64 height=60>
+                                        </div>
+                                    </div>
+                                    <p class=text-interest>Judo</p>
+                                </div>
+                                <div class=col-sm-6>
+                                    <div class=row>
+                                        <div class="col-md-12 intrst">
+                                            <img alt=Swimming src="img/icons/Swimming-icon.png" width=64 height=36>
+                                        </div>
+                                    </div>
+                                    <p class=text-interest>Swimming</p>
+                                </div>
+                                <div class=col-sm-6>
+                                    <div class=row>
+                                        <div class="col-md-12 intrst">
+                                            <img alt=Tennis src="img/icons/Tenis-icon.png" width=38 height=64>
+                                        </div>
+                                    </div>
+                                    <p class=text-interest>Tennis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section id=portfolio style='background: #41afe5;'>
+
+            <div class=container>
+                <div class=row>
+                    <div class="sec-title text-center wow animated fadeInDown">
+                        <h2 style="color: white">MY PAST PROJECTS</h2>
+                        <p style="color: white">I uploaded my past projects. Please check it and give me your feedback.</p>
+                    </div>
+                    <ul class="project-wrapper wow animated fadeInUp">
+                        <li class=portfolio-item>
+                            <img src="img/portfolio/item.jpg" class="lazy img-responsive" alt="This is the wordsru,professional proofreading and editing services website. Development Stack: Symfony Framework" width=310 height=195>
+                            <figcaption class=mask>
+                                <h3>Wordsru</h3>
+                                <p>Symfony Framework. </p>
+                            </figcaption>
+                            <ul class=external>
+                                <li><a class=fancybox title=wordsru data-fancybox-group=works href="img/portfolio/item.jpg"><i class="fa fa-search"></i></a></li>
+                                <li><a href="https://wordsru.com/"><i class="fa fa-link"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class=portfolio-item>
+                            <img src="img/portfolio/item2.jpg" class="lazy img-responsive" alt="This is the indonesian Hoya Lens company website. Development Stack: Laravel" width=310 height=195>
+                            <figcaption class=mask>
+                                <h3>Hoya Lens</h3>
+                                <p>Laravel framework. </p>
+                            </figcaption>
+                            <ul class=external>
+                                <li><a class=fancybox title="Hoya Lens" href="img/portfolio/item2.jpg" data-fancybox-group=works><i class="fa fa-search"></i></a></li>
+                                <li><a href="http://hoya.com.my"><i class="fa fa-link"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class=portfolio-item>
+                            <img src="img/portfolio/item3.jpg" class="lazy img-responsive" alt="This is the shopbolt delievery site." width=310 height=195>
+                            <figcaption class=mask>
+                                <h3>Shopbolt</h3>
+                                <p>Frontend: Angular, Backend: Laravel, DB: SQL </p>
+                            </figcaption>
+                            <ul class=external>
+                                <li><a class=fancybox title="Behind The world" data-fancybox-group=works href="img/portfolio/item3.jpg"><i class="fa fa-search"></i></a></li>
+                                <li><a href="https://shopboltnow.com"><i class="fa fa-link"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class=portfolio-item>
+                            <img src="img/portfolio/item4.jpg" class="lazy img-responsive" alt="This is the Pexencore site. It uses GIS" width=310 height=195>
+                            <figcaption class=mask>
+                                <h3>Pexencore</h3>
+                                <p>Frontend: angular, Backend: Laravel, DB: SQL </p>
+                            </figcaption>
+                            <ul class=external>
+                                <li><a class=fancybox title=Pexencore data-fancybox-group=works href="img/portfolio/item4.jpg"><i class="fa fa-search"></i></a></li>
+                                <li><a href="http://pexencore.com"><i class="fa fa-link"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class=portfolio-item>
+                            <img src="img/portfolio/item5.jpg" class="lazy img-responsive" alt="This is the innovativescholars site." width=310 height=195>
+                            <figcaption class=mask>
+                                <h3>Innovativescholars</h3>
+                                <p>Wordpress framework. </p>
+                            </figcaption>
+                            <ul class=external>
+                                <li><a class=fancybox title=Innovativescholars data-fancybox-group=works href="img/portfolio/item5.jpg"><i class="fa fa-search"></i></a></li>
+                                <li><a href="http://www.innovativescholars.com "><i class="fa fa-link"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class=portfolio-item>
+                            <img src="img/portfolio/item6.jpg" class="lazy img-responsive" alt="This is the Controlspan." width=310 height=195>
+                            <figcaption class=mask>
+                                <h3>Controlspan</h3>
+                                <p>Frontend: angular, twitterbootstrap, social api, mailchimp. </p>
+                            </figcaption>
+                            <ul class=external>
+                                <li><a class=fancybox title=Controlspan data-fancybox-group=works href="img/portfolio/item6.jpg"><i class="fa fa-search"></i></a></li>
+                                <li><a href="http://www.controlspan.invisionsolutions.ca"><i class="fa fa-link"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id=testimonials class="">
+            <div class=overlay>
+                <div class=container>
+                    <div class=row>
+                        <div class="sec-title text-center white wow animated fadeInDown">
+                            <h2>What Clients say</h2>
+                        </div>
+                        <div id=testimonial class=" wow animated fadeInUp">
+                            <div class="testimonial-item text-center">
+                                <img src="img/persons/ted.png" alt="Our Clients" width=94 height=94>
+                                <div class=clearfix>
+                                    <span>Ted Coombs</span>
+                                    <p >Ebert is hands down the BEST experience on upward I have encountered. He was able to complete my project faster than the expected time that we have discussed.There is a reason why I am recommend him and also he is worth the price. I completey trust his work and he will also become your friend. If you want quality, communication, and knowledge this is the guy for you.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <img src="img/persons/daniel.png" alt="Our Clients" width=94 height=92>
+                                <div class=clearfix>
+                                    <span>Daniel Rosendahl</span>
+                                    <p>Ebert is undoubtedly one of the most talented web developers that I have worked with. He is very disciplined, stick to the schedule and provides timely updates. I recommend him without any hesitation!</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <img src="img/persons/hamid.png" alt="Our Clients" width=94 height=95>
+                                <div class=clearfix>
+                                    <span>Hamid Sardar</span>
+                                    <p>Despite the job specification changing mid way through the project Ebert went above and beyond to complete it. The standard of work was first class and he provided regular updates, I would certainly recommend him to anyone.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id=contact style='background: #41afe5; background: url(img/sections/brick-wall.png) repeat center'>
+            <div class=container>
+                <div class=row>
+                    <div class="sec-title text-center wow animated fadeInDown">
+                        <h2 class="afterSpeciaH2">Contact</h2>
+                        <p>Leave a Message</p>
+                    </div>
+                    <div class="col-md-7 contact-form wow animated fadeInLeft">
+                        <form ng-submit="sendMessage(name,email,subject,message)">
+                            <div class=input-field>
+                                <input ng-model="name" name=name class=form-control placeholder="Your Name..." required>
+                            </div>
+                            <div class=input-field>
+                                <input ng-model="email" type=email name=email class=form-control placeholder="Your Email..." required>
+                            </div>
+                            <div class=input-field>
+                                <input ng-model="subject" name=subject class=form-control placeholder=Subject...>
+                            </div>
+                            <div class=input-field>
+                                <textarea ng-model="message" name=message class=form-control required placeholder=Messages...></textarea>
+                            </div>
+                            <input type="submit"  class="btn btn-blue btn-effect">
+                        </form>
+                    </div>
+                    <div class="col-md-5 wow animated fadeInRight">
+                        <address class=contact-details>
+                            <h3>Contact Me</h3>
+                            <p><i class="fa fa-pencil"></i>Hildvägen Uppsala, Sweden</span>
+                            </p>
+                            <br>
+                            <p><i class="fa fa-envelope"></i><a href="mailto:ebertlee330@gmail.com">ebertlee330@gmail.com</a></p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id=google-map>
+            <div id=map-canvas class="wow animated fadeInUp"></div>
+        </section>
+    </main>
+    <footer id=footer>
+        <div class=container>
+            <div class="row text-center">
+                <div class=footer-content>
+                    <div class="wow animated fadeInDown">
+                        <p>newsletter signup</p>
+                        <p>Get Cool Stuff! &nbsp;&nbsp;&nbsp;Don't spam!</p>
+                    </div>
+                    <form action="#" method=post class="subscribe-form wow animated fadeInUp">
+                        <div class=input-field>
+                            <input type=email class="subscribe form-control" placeholder="Enter Your Email...">
+                            <button type=submit class=submit-icon>
+                                <i class="fa fa-paper-plane fa-lg"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class=footer-social>
+                        <ul>
+                            <li class="wow animated zoomIn"><a href=""><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+                            <li class="wow animated zoomIn" data-wow-delay=0.3s><a href=""><i class="fa fa-twitter fa-3x"></i></a></li>
+                            <li class="wow animated zoomIn" data-wow-delay=0.6s><a href=""><i class="fa fa-skype fa-3x"></i></a></li>
+                            <li class="wow animated zoomIn" data-wow-delay=0.9s><a href=""><i class="fa fa-dribbble fa-3x"></i></a></li>
+                            <li class="wow animated zoomIn" data-wow-delay=1.2s><a href=""><i class="fa fa-youtube fa-3x"></i></a></li>
+                        </ul>
+                    </div>
+                    <p>Copyright &copy; 2015-2017 Design and Developed By <b>Ebert<b> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrJcATCmEpzGxVCAyep2FU8ZMpj7eMMoY"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.slitslider.js"></script>
+    <script src="js/jquery.ba-cond.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="js/textEffectWithCursor.js"></script>
+    <script type="text/javascript" src="js/snow.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $(document).snow({ SnowImage: "img/snow-1.png" });
+        });
+    </script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/angular-animate.js"></script>
+    <script src="js/angular-smarttable.js"></script>
+    <script src="js/ui-bootstrap-tpls-1.3.3.min.js"></script>
+    <!-- google map -->
+    <script src="js/angular-ui.js"></script>
+    <!-- angular map -->
+    <!--     <script src='js/angular-lodash.js'></script>
+    <script src="js/angular-simpleloger.js"></script>
+    <script src="js/angular-googlemap.js"></script> -->
+    <script src="app.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script>
+    <script type="text/javascript" src="js/img-particle.js"></script>
+</body>
+</html>
